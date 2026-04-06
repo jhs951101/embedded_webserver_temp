@@ -1,0 +1,182 @@
+	.arch armv8-a
+	.file	"ClassBasedRequestHandler.cpp"
+	.text
+	.section	.text._ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE,"axG",@progbits,_ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE,comdat
+	.align	2
+	.p2align 4,,11
+	.weak	_ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE
+	.type	_ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE, %function
+_ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE:
+.LFB274:
+	.cfi_startproc
+	ret
+	.cfi_endproc
+.LFE274:
+	.size	_ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE, .-_ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE
+	.section	.text._ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE,"axG",@progbits,_ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE,comdat
+	.align	2
+	.p2align 4,,11
+	.weak	_ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE
+	.type	_ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE, %function
+_ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE:
+.LFB2359:
+	.cfi_startproc
+	mov	w0, 1
+	ret
+	.cfi_endproc
+.LFE2359:
+	.size	_ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE, .-_ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE
+	.text
+	.align	2
+	.p2align 4,,11
+	.global	_ZN8opendnp324ClassBasedRequestHandler13ProcessHeaderERKNS_16AllObjectsHeaderE
+	.type	_ZN8opendnp324ClassBasedRequestHandler13ProcessHeaderERKNS_16AllObjectsHeaderE, %function
+_ZN8opendnp324ClassBasedRequestHandler13ProcessHeaderERKNS_16AllObjectsHeaderE:
+.LFB2360:
+	.cfi_startproc
+	stp	x29, x30, [sp, -32]!
+	.cfi_def_cfa_offset 32
+	.cfi_offset 29, -32
+	.cfi_offset 30, -24
+	adrp	x2, :got:__stack_chk_guard
+	mov	w3, 15363
+	mov	x29, sp
+	ldr	x2, [x2, #:got_lo12:__stack_chk_guard]
+	ldrh	w1, [x1]
+	ldr	x4, [x2]
+	str	x4, [sp, 24]
+	mov	x4, 0
+	cmp	w1, w3
+	beq	.L5
+	mov	w2, 15364
+	cmp	w1, w2
+	beq	.L6
+	mov	w2, 15362
+	cmp	w1, w2
+	beq	.L11
+	add	x0, sp, 16
+	mov	w1, 8
+	strh	wzr, [sp, 16]
+	bl	_ZN8opendnp38IINField6SetBitENS_6IINBitE
+	ldrh	w0, [sp, 16]
+.L8:
+	adrp	x1, :got:__stack_chk_guard
+	ldr	x1, [x1, #:got_lo12:__stack_chk_guard]
+	ldr	x3, [sp, 24]
+	ldr	x2, [x1]
+	subs	x3, x3, x2
+	mov	x2, 0
+	bne	.L12
+	ldp	x29, x30, [sp], 32
+	.cfi_remember_state
+	.cfi_restore 30
+	.cfi_restore 29
+	.cfi_def_cfa_offset 0
+	ret
+	.p2align 2,,3
+.L5:
+	.cfi_restore_state
+	add	x0, x0, 20
+	mov	w1, 4
+	bl	_ZN8opendnp310ClassField3SetENS_10PointClassE
+	mov	w0, 0
+	b	.L8
+	.p2align 2,,3
+.L11:
+	add	x0, x0, 20
+	mov	w1, 2
+	bl	_ZN8opendnp310ClassField3SetENS_10PointClassE
+	mov	w0, 0
+	b	.L8
+	.p2align 2,,3
+.L6:
+	add	x0, x0, 20
+	mov	w1, 8
+	bl	_ZN8opendnp310ClassField3SetENS_10PointClassE
+	mov	w0, 0
+	b	.L8
+.L12:
+	bl	__stack_chk_fail
+	.cfi_endproc
+.LFE2360:
+	.size	_ZN8opendnp324ClassBasedRequestHandler13ProcessHeaderERKNS_16AllObjectsHeaderE, .-_ZN8opendnp324ClassBasedRequestHandler13ProcessHeaderERKNS_16AllObjectsHeaderE
+	.weak	_ZTSN8opendnp324ClassBasedRequestHandlerE
+	.section	.rodata._ZTSN8opendnp324ClassBasedRequestHandlerE,"aG",@progbits,_ZTSN8opendnp324ClassBasedRequestHandlerE,comdat
+	.align	3
+	.type	_ZTSN8opendnp324ClassBasedRequestHandlerE, %object
+	.size	_ZTSN8opendnp324ClassBasedRequestHandlerE, 38
+_ZTSN8opendnp324ClassBasedRequestHandlerE:
+	.string	"N8opendnp324ClassBasedRequestHandlerE"
+	.weak	_ZTIN8opendnp324ClassBasedRequestHandlerE
+	.section	.data.rel.ro._ZTIN8opendnp324ClassBasedRequestHandlerE,"awG",@progbits,_ZTIN8opendnp324ClassBasedRequestHandlerE,comdat
+	.align	3
+	.type	_ZTIN8opendnp324ClassBasedRequestHandlerE, %object
+	.size	_ZTIN8opendnp324ClassBasedRequestHandlerE, 24
+_ZTIN8opendnp324ClassBasedRequestHandlerE:
+	.xword	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.xword	_ZTSN8opendnp324ClassBasedRequestHandlerE
+	.xword	_ZTIN8opendnp312IAPDUHandlerE
+	.weak	_ZTVN8opendnp324ClassBasedRequestHandlerE
+	.section	.data.rel.ro._ZTVN8opendnp324ClassBasedRequestHandlerE,"awG",@progbits,_ZTVN8opendnp324ClassBasedRequestHandlerE,comdat
+	.align	3
+	.type	_ZTVN8opendnp324ClassBasedRequestHandlerE, %object
+	.size	_ZTVN8opendnp324ClassBasedRequestHandlerE, 448
+_ZTVN8opendnp324ClassBasedRequestHandlerE:
+	.xword	0
+	.xword	_ZTIN8opendnp324ClassBasedRequestHandlerE
+	.xword	_ZN8opendnp324ClassBasedRequestHandler9IsAllowedEjNS_14GroupVariationENS_13QualifierCodeE
+	.xword	_ZN8opendnp324ClassBasedRequestHandler13ProcessHeaderERKNS_16AllObjectsHeaderE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_12Group120Var1ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_12Group120Var2ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_12Group120Var5ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_12Group120Var6ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_12Group120Var8ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_12Group120Var7ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_12Group120Var9ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_13Group120Var10ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_13Group120Var11ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_13Group120Var12ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_13Group120Var13ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_13Group120Var14ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_16FreeFormatHeaderERKNS_13Group120Var15ERKN7openpal6RSliceE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderERKNS_11ICollectionINS_11Group50Var1EEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderERKNS_11ICollectionINS_11Group51Var1EEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderERKNS_11ICollectionINS_11Group51Var2EEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderERKNS_11ICollectionINS_11Group52Var1EEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderERKNS_11ICollectionINS_11Group52Var2EEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderERKNS_11ICollectionINS_12Group120Var3EEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11CountHeaderERKNS_11ICollectionINS_12Group120Var4EEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_8IINValueEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_6BinaryEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_15DoubleBitBinaryEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_18BinaryOutputStatusEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_7CounterEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_13FrozenCounterEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_6AnalogEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_18AnalogOutputStatusEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_11OctetStringEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_15TimeAndIntervalEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_11RangeHeaderERKNS_11ICollectionINS_7IndexedINS_12Group121Var1EEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_6BinaryEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_18BinaryOutputStatusEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_15DoubleBitBinaryEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_7CounterEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_13FrozenCounterEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_6AnalogEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_18AnalogOutputStatusEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_11OctetStringEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_15TimeAndIntervalEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_18BinaryCommandEventEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_18AnalogCommandEventEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_12Group122Var1EEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_12Group122Var2EEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_23ControlRelayOutputBlockEEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_17AnalogOutputInt16EEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_17AnalogOutputInt32EEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_19AnalogOutputFloat32EEEEE
+	.xword	_ZN8opendnp312IAPDUHandler13ProcessHeaderERKNS_12PrefixHeaderERKNS_11ICollectionINS_7IndexedINS_20AnalogOutputDouble64EEEEE
+	.xword	_ZN8opendnp312IAPDUHandler14OnHeaderResultERKNS_12HeaderRecordERKNS_8IINFieldE
+	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+	.section	.note.GNU-stack,"",@progbits
